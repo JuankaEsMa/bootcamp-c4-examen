@@ -1,6 +1,14 @@
 # bootcamp-c4-examen
 
-crear base de datos sql con éstos comandos:
+## Crear docker container
+
+docker run -d -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=root --mount src=mysql-db-data,dst=/var/lib/mysql mysql
+
+##Entrar a workbench
+
+Entrar al workbench y crear una conexión con el puerto 3306 el nombre que tu quieras y la contraseña y usuarios cómo "root"(sin commillas)
+
+## crear base de datos sql con éstos comandos:
 
 use examenC4;
 
